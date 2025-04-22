@@ -1,0 +1,146 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+  height: 80vh;
+  min-width: 800px;
+  padding: 20px;
+}
+
+.search-input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #f0f4f8;
+}
+
+.display-wrapper {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.display-item {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 120px;
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.display-item:hover {
+  transform: scale(1.05);
+}
+
+.display-item .date {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.display-item .weather-icon {
+  width: 40px;
+  height: 40px;
+  margin: 8px auto;
+}
+
+.display-item .weather-code {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.display-item .temperature {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 1000px) {
+  .app-container {
+    min-width: 500px;
+    padding: 15px;
+  }
+
+  .display-item {
+    width: 80px;
+    padding: 8px;
+  }
+
+  .display-item .date {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .display-item .weather-icon {
+    width: 30px;
+    height: 30px;
+    margin: 6px auto;
+  }
+
+  .display-item .weather-code {
+    font-size: 12px;
+    color: #666;
+    margin: 2px 0;
+  }
+
+  .display-item .temperature {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+@media (max-width: 800px) {
+  .app-container {
+    min-width: 300px;
+    padding: 10px;
+  }
+
+  .display-item {
+    width: 60px;
+    padding: 6px;
+  }
+
+  .display-item .date {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .display-item .weather-icon {
+    width: 20px;
+    height: 20px;
+    margin: 4px auto;
+  }
+
+  .display-item .weather-code {
+    font-size: 10px;
+    color: #666;
+    margin: 2px 0;
+  }
+
+  .display-item .temperature {
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+}
